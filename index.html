@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Quiz App</title>
+		<link rel="stylesheet" href="Quiz_Style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<div class="Question" id="one">
+				<p id="Q_num">Question 0 / 10</p>
+				<p id="quesText">Can you explain Data Structures and Algorithms</p>
+			</div>
+			<div class="Answer" id="two">
+				<div class="btn">
+					<input class="optionBtn" type="radio" name="Option" value="a" />
+					<label for="">Option 1</label>
+				</div>
+				<div class="btn">
+					<input class="optionBtn" type="radio" name="Option" value="b" />
+					<label for="">Option 2</label>
+				</div>
+				<div class="btn">
+					<input class="optionBtn" type="radio" name="Option" value="c" />
+					<label for="">Option 3</label>
+				</div>
+				<div class="btn">
+					<input class="optionBtn" type="radio" name="Option" value="d" />
+					<label for="">Option 4</label>
+				</div>
+
+				<div class="nextBtn">
+					<button id="next" onclick="submitAns()">Submit</button>
+				</div>
+			</div>
+		</div>
+		<div class="afterContainer">
+			<div class="top" id="top">Thanks For participation !</div>
+			<div class="bottom" id="bottom">
+				<pre id="g">✅ Right Answers  :  10</pre>
+				<pre id="r">❌ Wrong Answers  :  10</pre>
+				<pre id="a">⚠️ Unattempted    :  10</pre>
+				<br />
+				<pre id="t"> Total Score  10 </pre>
+			</div>
+		</div>
+		<!-- After Completion of the Quiz -->
+		<script src="Quiz.js"></script>
+	</body>
+</html>

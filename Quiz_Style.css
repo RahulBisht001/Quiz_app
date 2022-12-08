@@ -1,0 +1,153 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+:root {
+	--FONTFAMILY: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+}
+body {
+	background-color: #0c0c0d;
+}
+/* ------------Container ------------------ */
+
+.container {
+	display: flex;
+	justify-content: space-between;
+	/* flex-wrap: wrap; */
+	/* flex-basis: 40%; */
+	/* align-items: center; */
+	align-items: baseline;
+	margin: 0 20%;
+	margin-top: 80px;
+	height: 350px;
+	border-radius: 20px;
+	/* background-color: #3f4964; */
+	background-color: black;
+	box-shadow: 0px 0px 20px rgb(76, 145, 201);
+}
+/* ------------------Question DIV-------------------- */
+.Question {
+	/* display: flex;
+	flex-wrap: wrap; */
+	flex-basis: 50%;
+	font-size: 40px;
+	font-weight: 700;
+	color: rgb(93, 58, 230);
+}
+.Question p {
+	margin-top: 0px;
+	margin-left: 20px;
+	font-family: var(--FONTFAMILY);
+}
+/* ------------Question Text --------------------------- */
+#quesText {
+	font-family: var(--FONTFAMILY);
+	margin-top: 40px;
+	font-size: 20px;
+	line-height: 2.5ch;
+	color: rgb(207, 207, 207);
+}
+
+/* ----------------Answer DIV------------------ */
+.Answer {
+	flex-basis: 35%;
+	/* display: flex;
+	flex-direction: column; */
+	margin-right: 30px;
+	margin-top: 20px;
+	color: rgb(207, 207, 207);
+}
+.btn {
+	outline: none;
+	margin: 20px 14px;
+	border-radius: 12px;
+	font-size: 18px;
+	font-family: var(--FONTFAMILY);
+}
+.btn input[type="radio"] {
+	margin: 10px 20px;
+}
+
+/* ------------------     Next page Button --------------------------------- */
+#next {
+	position: absolute;
+	right: 25%;
+	margin-top: 20px;
+	padding: 10px 50px;
+	background-color: rgb(121, 58, 230);
+	font-family: var(--FONTFAMILY);
+	outline: none;
+	font-size: 18px;
+	font-weight: 600;
+	border-radius: 15px;
+}
+#next:hover {
+	background-color: rgb(99, 209, 125);
+	color: rgb(66, 66, 66);
+}
+/* -------------After Completion of Quiz------------------------ */
+.afterContainer {
+	display: none;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+	margin: 0 30%;
+	margin-top: 80px;
+	height: 320px;
+	/* width: 500px; */
+	border-radius: 20px;
+	background-color: black;
+	box-shadow: 0px 0px 20px rgb(94, 63, 217);
+}
+.top {
+	margin-top: 20px;
+	color: rgb(203, 203, 203);
+	font-family: var(--FONTFAMILY);
+	font-size: 25px;
+	font-weight: 600;
+}
+.bottom {
+	color: rgb(203, 203, 203);
+	font-family: var(--FONTFAMILY);
+	font-size: 18px;
+}
+.bottom pre {
+	margin: 10px 0;
+	font-weight: 600;
+}
+#g {
+	color: rgb(38, 183, 38);
+}
+#r {
+	color: red;
+}
+#a {
+	color: yellow;
+}
+#t {
+	font-size: 24px;
+}
+/* ---------Media Queries for smaller Devices----------------- */
+
+@media only screen and (max-width: 800px) {
+	.container {
+		margin: 0 3%;
+		margin-top: 80px;
+		height: 420px;
+		flex-direction: column;
+	}
+
+	#next {
+		margin-top: 5px;
+		right: 5%;
+	}
+	.afterContainer {
+		margin: 0 2%;
+		margin-top: 80px;
+		flex-direction: column;
+		/* width: 350px; */
+	}
+}
